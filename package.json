@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "description": "OctoKlaw Intelligence API — web intelligence as a service",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "dev": "vercel dev",
-    "build": "echo 'Serverless functions — no build step needed'",
-    "test": "node test.js"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
-    "node-fetch": "^3.3.2"
+    "express": "^4.19.2"
   },
   "engines": {
     "node": ">=20"
